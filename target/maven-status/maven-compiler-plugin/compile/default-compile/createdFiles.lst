@@ -1,0 +1,5 @@
+pages\Andrea\AdminCenterPage.class
+pages\Andrea\HomePage.class
+pages\Andrea\LoginPage.class
+pages\ConfirmationPage.class
+pages\FormPage.class

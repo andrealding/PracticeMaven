@@ -1,0 +1,10 @@
+1. If there are times when that element will not be present, you will need to add a try-catch, catch the WebDriverTimeoutException,
+and return false in that case.
+
+2. You have two approaches. Selenium has been specifically written to NOT allow interaction with hidden elements. The rational is that
+   if a person cannot perform that action, then neither should Selenium. Therefore, to perform the click via Selenium, you must perform
+   the action a user would do to make that button visible (e.g mouse over event, click another element, etc) then perform the click once visible.
+
+   However, Selenium does allow you to execute Javascript within the context of an element, so you could write Javascript to perform the click
+   event even if it is hidden.
+   My preference is to always try and perform the actions to make the button visible
